@@ -7,6 +7,7 @@
     <title>NYT Search</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 
 <body>
@@ -14,43 +15,54 @@
         <header>
 
         </header>
-        <main>
-            <section class="container">
+        <main class="container">
+            <section>
                 <div class="jumbotron">
                     <h1 class="display-3">New York Times</h1>
                 </div>
-                <form>
-                    <div class="form-group">
-                        <label for="searchTerm">Search Term</label>
-                        <input type="text" class="form-control" id="searchTerm">
+                <div class="card">
+                    <div class="card-header">
+                        Top Articles
                     </div>
-                    <form class="form-inline">
-                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
-                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <div class="form-group">
-                            <label for="startYear">Start Year</label>
-                            <input type="text" class="form-control" id="startYear">
-                        </div>
-                        <div class="form-group">
-                            <label for="endYear">End Year</label>
-                            <input type="text" class="form-control" id="endYear">
-                        </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="searchTerm">Search Term</label>
+                                <input type="text" class="form-control" id="searchTerm">
+                            </div>
+                            <div class="form-group">
+                                <label for="recordCount">Number of Records to Retrieve</label>
+                                <input type="number" class="form-control" id="recordCount">
+                            </div>
+                            <div class="form-group">
+                                <label for="startYear">Start Year</label>
+                                <input type="text" class="form-control" id="startYear">
+                            </div>
+                            <div class="form-group">
+                                <label for="endYear">End Year</label>
+                                <input type="text" class="form-control" id="endYear">
+                            </div>
 
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-danger">Clear Results</button>
+                        </form>
+                    </div>
+                </div>
+
             </section>
             <section>
+                <div class="card">
+                    <div class="card-header">
+                        Top Articles
+                    </div>
+                    <div class="card-body">
 
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
@@ -66,6 +78,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+        <script src="./Assets/js/javascript.js"></script>
 </body>
 
 </html>
